@@ -480,7 +480,7 @@
           </div>
         </div>
         <button
-          class="max-w-[400px] w-full h-[60px] rounded-[30px] custom-bg text-white sm:text-[1.2rem] xs:text-[16px]"
+          class="max-w-[400px] w-full h-[60px] rounded-[30px] custom-bg text-white sm:text-[1.2rem] xs:text-[16px] mt-[2rem]"
           @click="sendEmail"
           :disabled="loading"
         >
