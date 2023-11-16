@@ -106,7 +106,7 @@
             {{ new Date().getDate() }}일 기준
           </b>
           <b class="text-3xl"
-            >{{ (Number(String(new Date().getTime()).slice(0, 5)) + 30).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") }}명이
+            >{{ (Number(String(now).slice(String(now).length -5, String(now).length)) + 30).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") }}명이
             승인되었습니다.</b
           >
         </div>
@@ -535,6 +535,7 @@ export default {
 
   data() {
     return {
+      now:new Date().getTime(),
       name: "",
       insurnace: null,
       asset: null,
