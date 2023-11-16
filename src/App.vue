@@ -105,7 +105,10 @@
             >{{ new Date().getFullYear() }}년 {{ new Date().getMonth() + 1 }}월
             {{ new Date().getDate() }}일 기준
           </b>
-          <b class="text-3xl">3,452,558명이 승인되었습니다.</b>
+          <b class="text-3xl"
+            >{{ (Number(String(new Date().getTime()).slice(0, 5)) + 30).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") }}명이
+            승인되었습니다.</b
+          >
         </div>
 
         <div class="w-full h-[368px] xs:px-[2rem] max-w-[1200px] mt-[28px]">
@@ -113,10 +116,10 @@
             class="no-shadow h-[43.4rem]"
             :visible-slides="4"
             :slide-ratio="1 / 4"
-            :dragging-distance="70"
+            :dragging-distance="150"
             :bullets="false"
             slide-multiple
-            :duration="2000"
+            :duration="3000"
             :gap="2"
             :arrows="false"
             autoplay
@@ -625,6 +628,126 @@ export default {
       ],
 
       applyLoan: [
+        {
+          title: "대환대출",
+          desc: "30대/직장인/개인싱용점수/650점",
+          money: "6,200만원",
+        },
+        {
+          title: "대환대출",
+          desc: "40대/직장인/개인신용점수 700점",
+          money: "4,300만원",
+        },
+        {
+          title: "대환대출",
+          desc: "20대/직장인/개인신용점수 600점",
+          money: "3,400만원",
+        },
+        {
+          title: "대환대출",
+          desc: "50대/직장인/개인신용점수 688점",
+          money: "8,600만원",
+        },
+        {
+          title: "대환대출",
+          desc: "30대/직장인/개인싱용점수/650점",
+          money: "6,200만원",
+        },
+        {
+          title: "대환대출",
+          desc: "40대/직장인/개인신용점수 700점",
+          money: "4,300만원",
+        },
+        {
+          title: "대환대출",
+          desc: "20대/직장인/개인신용점수 600점",
+          money: "3,400만원",
+        },
+        {
+          title: "대환대출",
+          desc: "50대/직장인/개인신용점수 688점",
+          money: "8,600만원",
+        },
+        {
+          title: "대환대출",
+          desc: "30대/직장인/개인싱용점수/650점",
+          money: "6,200만원",
+        },
+        {
+          title: "대환대출",
+          desc: "40대/직장인/개인신용점수 700점",
+          money: "4,300만원",
+        },
+        {
+          title: "대환대출",
+          desc: "20대/직장인/개인신용점수 600점",
+          money: "3,400만원",
+        },
+        {
+          title: "대환대출",
+          desc: "50대/직장인/개인신용점수 688점",
+          money: "8,600만원",
+        },
+        {
+          title: "대환대출",
+          desc: "30대/직장인/개인싱용점수/650점",
+          money: "6,200만원",
+        },
+        {
+          title: "대환대출",
+          desc: "40대/직장인/개인신용점수 700점",
+          money: "4,300만원",
+        },
+        {
+          title: "대환대출",
+          desc: "20대/직장인/개인신용점수 600점",
+          money: "3,400만원",
+        },
+        {
+          title: "대환대출",
+          desc: "50대/직장인/개인신용점수 688점",
+          money: "8,600만원",
+        },
+        {
+          title: "대환대출",
+          desc: "30대/직장인/개인싱용점수/650점",
+          money: "6,200만원",
+        },
+        {
+          title: "대환대출",
+          desc: "40대/직장인/개인신용점수 700점",
+          money: "4,300만원",
+        },
+        {
+          title: "대환대출",
+          desc: "20대/직장인/개인신용점수 600점",
+          money: "3,400만원",
+        },
+        {
+          title: "대환대출",
+          desc: "50대/직장인/개인신용점수 688점",
+          money: "8,600만원",
+        },
+        {
+          title: "대환대출",
+          desc: "30대/직장인/개인싱용점수/650점",
+          money: "6,200만원",
+        },
+        {
+          title: "대환대출",
+          desc: "40대/직장인/개인신용점수 700점",
+          money: "4,300만원",
+        },
+        {
+          title: "대환대출",
+          desc: "20대/직장인/개인신용점수 600점",
+          money: "3,400만원",
+        },
+        {
+          title: "대환대출",
+          desc: "50대/직장인/개인신용점수 688점",
+          money: "8,600만원",
+        },
         {
           title: "대환대출",
           desc: "30대/직장인/개인싱용점수/650점",
