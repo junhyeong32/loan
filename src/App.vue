@@ -794,7 +794,8 @@ export default {
   },
   computed: {},
   methods: {
-    sendEmail() {
+   async sendEmail() {
+      
       if (!this.name) {
         return alert("이름을 입력해주세요");
       }
@@ -820,19 +821,25 @@ export default {
         memo: this.memo,
       };
 
+
+
       emailjs
         .send("service_3uwosf8", "template_j1kdgc2", form, "whlv47Wmf09qQsiNX")
         .then(
           (result) => {
             alert("이메일 전송이 완료되었습니다!", result.text);
+            this.loading = false;
+    if(!this.loading)location.reload();
           },
           (error) => {
             alert("이메일 전송이 실패되었습니다", error.text);
+            this.loading = false;
+              if(!this.loading)location.reload();
           }
         );
 
-      this.loading = false;
-      location.reload();
+    
+      
     },
     scrollView(className) {
       const ele = document.querySelector(`.${className}`);
@@ -843,6 +850,9 @@ export default {
       });
       menu.value = false;
     },
+  },
+  watch(){
+    
   },
   created() {},
   mounted() {},
