@@ -824,7 +824,7 @@ export default {
 
 
       emailjs
-        .send("service_3uwosf8", "template_j1kdgc2", form, "whlv47Wmf09qQsiNX")
+        .send("service_9b2maet", "template_j1kdgc2", form, "whlv47Wmf09qQsiNX")
         .then(
           (result) => {
             alert("이메일 전송이 완료되었습니다!", result.text);
