@@ -413,7 +413,7 @@
             </div>
           </div> -->
           <div class="sm:w-[100%] xs:w-full flex flex-col gap-1">
-            <label>메모</label>
+            <label>메모 (신청금액, 요청사항)</label>
             <!-- <div class="flex gap-1">
               <button
                 @click="income = 1"
@@ -827,7 +827,7 @@ export default {
         .send("service_9b2maet", "template_j1kdgc2", form, "whlv47Wmf09qQsiNX")
         .then(
           (result) => {
-            alert("이메일 전송이 완료되었습니다!", result.text);
+            alert(`더드림론을 이용해주셔서 감사합니다.\n접수가 완료 되었습니다.`, result.text);
             this.loading = false;
     if(!this.loading)location.reload();
           },
